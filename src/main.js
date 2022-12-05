@@ -1,4 +1,4 @@
-import { aToZ, zToA, charactersAlive, charactersDead, speciesHuman, speciesHalfGiant, spellsZToA, spellsCharm, spellsHex, spellsJinx, spellsTransportation, alReves } from './data.js';
+import { aToZ, zToA, charactersAlive, charactersDead, speciesHuman, speciesHalfGiant, spellsZToA, spellsCharm, spellsHex, spellsJinx, spellsTransportation, alReves, potionsDesc} from './data.js';
 import data from './harrydata.js';
 
 
@@ -273,6 +273,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
         </div>
      </div>
       `;
@@ -302,6 +303,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -332,6 +334,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -362,6 +365,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -392,6 +396,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -422,6 +427,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -455,6 +461,7 @@ document.getElementById("btnSpells").addEventListener("click", () => {
           <p class="data">Other name: ${element.other_name}</p>
           <p class="data">Description: ${element.description}</p>
           <p class="data">Etymology: ${element.etymology}</p>
+          <p class="data">Spell type: ${element.spell_type}</p>
         </div>
      </div>
       `;
@@ -593,7 +600,6 @@ selectPotions.addEventListener('change', () => {
 
       test1.appendChild(createElement);
 
-      return
     });
   }else if(valorOption=='descendiente'){
     const x = document.querySelector(".test")
@@ -603,7 +609,7 @@ selectPotions.addEventListener('change', () => {
     const cardConteiner = document.getElementById('cardConteiner');
     cardConteiner.style.display = 'block';
 
-    const pociones = alReves(data.potions)
+    const pociones = potionsDesc(data.potions)
   
     pociones.forEach(element => {
       const createElement = document.createElement("div")

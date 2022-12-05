@@ -12601,7 +12601,7 @@ const data = {
     },
     {
       "id": 6,
-      "name": "Albus Dumbledore's forceful spell",
+      "name": "Albus Dumbledores forceful spell",
       "other_name": null,
       "pronunciation": null,
       "spell_type": "Spell",
