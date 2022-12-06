@@ -35,7 +35,6 @@ const charactersData = [
     "species": "half-giant"
   }
 
-  
 ]
 //Test orden alfabetico A-Z
 

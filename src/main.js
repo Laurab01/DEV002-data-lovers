@@ -6,7 +6,9 @@ const test1 = document.querySelector('.test');
 
 const selectCharacters = document.querySelector('#chooseCharacters');
 
+
 const selectSpells = document.querySelector('#segundoSelect');
+
 
 const selectBooks = document.querySelector('#tercerSelect');
 
@@ -16,7 +18,7 @@ const selectPotions = document.querySelector('#cuartoSelect')
 
 selectCharacters.addEventListener('change', () => {
   let valorOption = selectCharacters.value;
-  
+
   if (valorOption == 'a-z') {
     const x = document.querySelector(".test")
     x.innerHTML = ""
@@ -26,7 +28,7 @@ selectCharacters.addEventListener('change', () => {
     cardConteiner.style.display = 'block';
 
     const filtro = aToZ(data.characters)
-    
+
 
     filtro.forEach(element => {
       const createElement = document.createElement("div")
@@ -64,6 +66,7 @@ selectCharacters.addEventListener('change', () => {
 
     const filterzToA = zToA(data.characters)
 
+
     filterzToA.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -94,7 +97,7 @@ selectCharacters.addEventListener('change', () => {
     cardConteiner.style.display = 'block';
 
     const alive = charactersAlive(data.characters)
-    
+
     alive.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -156,7 +159,7 @@ selectCharacters.addEventListener('change', () => {
     cardConteiner.style.display = 'block';
 
     const aaa = speciesHuman(data.characters)
-  
+
     aaa.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -186,7 +189,7 @@ selectCharacters.addEventListener('change', () => {
     cardConteiner.style.display = 'block';
 
     const aaa = speciesHalfGiant(data.characters)
-    
+
     aaa.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -211,9 +214,9 @@ selectCharacters.addEventListener('change', () => {
 
 // Mostrar la data en los botones de personajes
 document.getElementById("btnCharac").addEventListener("click", () => {
-  
+
   const x = document.querySelector(".test")
-    x.innerHTML = ""
+  x.innerHTML = ""
   const accederAlDom = document.getElementById('home')
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
@@ -226,7 +229,7 @@ document.getElementById("btnCharac").addEventListener("click", () => {
     createElement.setAttribute("class", 'contenedorCard');
     const templateTest = `
     <div id="template">
-    
+
       <img  class="imagen" src="${img}">
        <div class="caja">
        <h4 class="data"> ${element.name}</h4>
@@ -236,7 +239,7 @@ document.getElementById("btnCharac").addEventListener("click", () => {
         <p class="data">Specie: ${element.species}</p>
       </div>
    </div>
-   
+
     `;
     createElement.innerHTML = templateTest;
     test1.appendChild(createElement);
@@ -440,9 +443,9 @@ selectSpells.addEventListener('change', () => {
 });
 // Mostrar la data en los botones de hechizos
 document.getElementById("btnSpells").addEventListener("click", () => {
-  
+
   const x = document.querySelector(".test")
-    x.innerHTML = ""
+  x.innerHTML = ""
   const accederAlDom = document.getElementById('home')
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
@@ -541,9 +544,9 @@ selectBooks.addEventListener('change', () => {
 })
 //Mostrar la data en el boton de libros
 document.getElementById("btnBooks").addEventListener("click", () => {
-  
+
   const x = document.querySelector(".test")
-    x.innerHTML = ""
+  x.innerHTML = ""
   const accederAlDom = document.getElementById('home')
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
@@ -583,7 +586,7 @@ selectPotions.addEventListener('change', () => {
     cardConteiner.style.display = 'block';
 
     const pociones = data.potions
-  
+
     pociones.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -601,7 +604,7 @@ selectPotions.addEventListener('change', () => {
       test1.appendChild(createElement);
 
     });
-  }else if(valorOption=='descendiente'){
+  } else if (valorOption == 'descendiente') {
     const x = document.querySelector(".test")
     x.innerHTML = ""
     const accederAlDom = document.getElementById('home')
@@ -633,9 +636,9 @@ selectPotions.addEventListener('change', () => {
 })
 //Mostrar la data en el boton de posiones
 document.getElementById("btnPotions").addEventListener("click", () => {
-  
+
   const x = document.querySelector(".test")
-    x.innerHTML = ""
+  x.innerHTML = ""
   const accederAlDom = document.getElementById('home')
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
@@ -651,7 +654,7 @@ document.getElementById("btnPotions").addEventListener("click", () => {
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
           <p class="data">Description: ${element.description}</p>
-        
+
         </div>
      </div>
       `;
@@ -662,3 +665,38 @@ document.getElementById("btnPotions").addEventListener("click", () => {
 
 
 });
+
+// Dandole funcionalidad a la barra de búsqueda
+document.addEventListener('keyup', e => {
+  const x = document.querySelector(".test")
+  x.innerHTML = ""
+
+  const o = document.querySelector("#home")
+  o.innerHTML = ""
+
+
+  if (e.target.matches('#search')) {
+
+    let inputSearch = (e.target.value).toLowerCase();
+    console.log(inputSearch);
+    // dios contiene el nuevo array
+    let buscarPersonajes = (data.characters).filter(elemento => (elemento.name).toLowerCase().includes(inputSearch))
+
+    buscarPersonajes.forEach(element => {
+
+      const createElement = document.createElement("div")
+      createElement.setAttribute("class", 'contenedorCard');
+      const templateTest = `
+      <div id="template">
+          <img  class="imagen" src="imag/incógnito.jpg">
+           <div class="caja">
+           <h4 class="data"> ${element.name}</h4>
+          </div>
+       </div>
+        `;
+      createElement.innerHTML = templateTest;
+      test1.appendChild(createElement);
+
+    });
+  }
+})
