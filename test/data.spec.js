@@ -1,5 +1,5 @@
 
-import { aToZ, charactersAlive, charactersDead, zToA spellsZToA, speciesHuman, spellsCharm, alReves, potionsDesc, speciesHalfGiant} from '../src/data.js';
+import { aToZ, charactersAlive, charactersDead, zToA, spellsZToA, speciesHuman, spellsCharm, alReves, potionsDesc, speciesHalfGiant} from '../src/data.js';
 
 // Creamos un data corta para probar los test
 
