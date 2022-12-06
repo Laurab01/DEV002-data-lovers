@@ -381,7 +381,7 @@ h3 {
 
 }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+@media only screen and (min-width:320px) and (max-width:1130px) {
   body {
     margin-bottom: 5px;
     background-size: 100%;
@@ -423,7 +423,7 @@ h3 {
   .filterSelect {
     display: flex;
     position: relative;
-    right: 137%;
+    right: 435%;
     bottom: 100px;
     align-items: center;
   }

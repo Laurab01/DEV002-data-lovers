@@ -1,5 +1,5 @@
 
-import { aToZ, charactersDead, zToA,} from '../src/data.js';
+import { aToZ, charactersDead, zToA} from '../src/data.js';
 
 // Creamos un data corta para probar los test
 
