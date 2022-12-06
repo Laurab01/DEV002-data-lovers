@@ -58,7 +58,7 @@ export const speciesHalfGiant = (characters) => {
 
 // Filtrar hechizos de la Z-A
 export const spellsZToA = (arr) => {
-  return arr.reverse(data.id)
+  return arr.reverse(data.name)
 }
 
 // Filtramos por  hechizos de tipo charm
