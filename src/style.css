@@ -381,7 +381,7 @@ h3 {
 
 }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+@media only screen and (min-width:320px) and (max-width:1280px) {
   body {
     margin-bottom: 5px;
     background-size: 100%;
@@ -423,8 +423,8 @@ h3 {
   .filterSelect {
     display: flex;
     position: relative;
-    right: 137%;
-    bottom: 100px;
+    right: 435px;
+    bottom: 87px;
     align-items: center;
   }
 
@@ -439,10 +439,10 @@ h3 {
   #search {
     display: flex;
     position: relative;
-    left: 90px;
+    left: 65px;
     width: 150px;
     height: 15px;
-    top: 45px;
+    top: 50px;
   }
 
   hr {
@@ -455,8 +455,8 @@ h3 {
   }
 
   #lupa {
-    left: 245px;
-    top: 27px;
+    left: 222px;
+    top: 32px;
     width: 18px;
   }
 
@@ -487,8 +487,8 @@ h3 {
   }
 
   #hibrido {
-    top: 200px;
-    left: 30px;
+    top: 0;
+    left: 0;
   }
 
   .subtitles {
@@ -531,7 +531,7 @@ h3 {
   .btnPrincipal {
     left: 0;
     right: 0;
-    top: 40px;
+    top: 50px;
     font-size: 10px;
     width: auto;
     margin: 0;

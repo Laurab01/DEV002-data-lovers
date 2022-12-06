@@ -1,4 +1,4 @@
-import { aToZ, zToA, charactersAlive, charactersDead, speciesHuman, speciesHalfGiant, spellsZToA, spellsCharm, spellsHex, spellsJinx, spellsTransportation, alReves } from './data.js';
+import { aToZ, zToA, charactersAlive, charactersDead, speciesHuman, speciesHalfGiant, spellsZToA, spellsCharm, spellsHex, spellsJinx, spellsTransportation, alReves, potionsDesc} from './data.js';
 import data from './harrydata.js';
 
 
@@ -35,7 +35,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -72,7 +72,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -103,7 +103,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -135,7 +135,7 @@ selectCharacters.addEventListener('change', () => {
 
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -165,7 +165,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -195,7 +195,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -224,13 +224,12 @@ document.getElementById("btnCharac").addEventListener("click", () => {
 
   const characters = data.characters;
   characters.forEach(element => {
-    let img = element.image !== "" ? element.image : "imag/incognito.jpg";
     const createElement = document.createElement("div")
     createElement.setAttribute("class", 'contenedorCard');
     const templateTest = `
     <div id="template">
 
-      <img  class="imagen" src="${img}">
+      <img  class="imagen" src="imag/incognito.jpg">
        <div class="caja">
        <h4 class="data"> ${element.name}</h4>
         <p class="data">Ancestry: ${element.species}</p>
@@ -276,6 +275,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
         </div>
      </div>
       `;
@@ -305,6 +305,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -335,6 +336,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -365,6 +367,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -395,6 +398,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -425,6 +429,7 @@ selectSpells.addEventListener('change', () => {
          <p class="data">Other name: ${element.other_name}</p>
          <p class="data">Description: ${element.description}</p>
          <p class="data">Etymology: ${element.etymology}</p>
+         <p class="data">Spell type: ${element.spell_type}</p>
           </div>
      </div>`;
 
@@ -458,6 +463,7 @@ document.getElementById("btnSpells").addEventListener("click", () => {
           <p class="data">Other name: ${element.other_name}</p>
           <p class="data">Description: ${element.description}</p>
           <p class="data">Etymology: ${element.etymology}</p>
+          <p class="data">Spell type: ${element.spell_type}</p>
         </div>
      </div>
       `;
@@ -596,7 +602,6 @@ selectPotions.addEventListener('change', () => {
 
       test1.appendChild(createElement);
 
-      return
     });
   } else if (valorOption == 'descendiente') {
     const x = document.querySelector(".test")
@@ -606,8 +611,8 @@ selectPotions.addEventListener('change', () => {
     const cardConteiner = document.getElementById('cardConteiner');
     cardConteiner.style.display = 'block';
 
-    const pociones = alReves(data.potions)
-
+    const pociones = potionsDesc(data.potions)
+  
     pociones.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -685,6 +690,10 @@ document.addEventListener('keyup', e => {
           <img  class="imagen" src="imag/incógnito.jpg">
            <div class="caja">
            <h4 class="data"> ${element.name}</h4>
+        <p class="data">Ancestry: ${element.species}</p>
+       <p class="data">Gender: ${element.gender}</p>
+        <p class="data">Alive: ${element.alive}</p>
+        <p class="data">Specie: ${element.species}</p>
           </div>
        </div>
         `;
