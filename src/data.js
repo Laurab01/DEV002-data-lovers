@@ -18,7 +18,7 @@ export const aToZ = (arr) => {
 
 }
 
-// Filtrar persoanjes de la Z-A
+// Filtrar personajes de la Z-A
 
 export const zToA = (arr) => {
   return arr.sort((nombre, otroNombre) => {
@@ -84,13 +84,9 @@ export const spellsTransportation = (spells) => {
 
 // Filtramos los libros del más reciente al más viejo.
 export const alReves = (arr) => {
-  return arr.reverse(data.id)
+  return arr.reverse(data.releaseDay)
 };
-
-// export const buscar = (data) => {
-//   return data.matches(tarjetas => tarjetas.characters);
-// };
-
-
-// zToA,computeStats ,charactersAlive,charactersDead,speciesHuman,speciesHalfGiant,spellsZToA,spellsCharm,spellsHex,spellsJinx,spellsTransportation,alReves
-//
+// filtramos las pociones de la Z-A
+export const potionsDesc = (arr) => {
+  return arr.reverse (data.potions)
+}
