@@ -6,4 +6,4 @@ Son una comunidad con gustos de las peliculas y libros de Harry Potter los cuale
 
 ### Nuestro diseño
 
-Para elaborar nuestro prototipo primero revisamos diferentes paginas e ibamos sacando diferentes ideas de las pagina que ibamos viendo. Elaboramos nuestro prototipo en Figma y pedimos feedback de compañeras y solicitamos una OH 
+Para elaborar nuestro prototipo primero revisamos diferentes paginas e ibamos sacando diferentes ideas de las pagina que ibamos viendo. Elaboramos nuestro prototipo en Figma y pedimos feedback de compañeras y solicitamos una OH.

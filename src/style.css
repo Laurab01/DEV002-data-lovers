@@ -57,7 +57,7 @@ body {
 h1 {
   font-family: 'Island Moments', cursive;
   font-size: 700%;
-  left: 450px;
+  left: 400px;
   right: 60px;
   bottom: 20px;
   top: 50px;
@@ -86,7 +86,6 @@ hr {
 
 #contenedor {
   display: flex;
-  justify-content: flex-start;
 
 }
 
@@ -540,4 +539,37 @@ h3 {
   hr {
     height: 2px;
   }
+}
+@media only screen and (min-width:1280px) and (max-width:1600px) {
+.filterSelect{
+  position: relative;
+  right: 500px;
+  bottom: 20px;
+  margin: 0;
+}
+#search{
+  right: 250px;
+  width: 480px;
+  bottom: 200px;
+}
+h1{
+  left: 200px;
+  display: flexbox;
+  flex-wrap: wrap;
+  margin: 0;
+  top: 25px;
+  font-size: 90px;
+}
+#barra{
+  height: 230px;
+}
+select{
+    height: 30px;
+}
+#lupa{
+  left: 240px;
+  width: 30px;
+
+}
+
 }
