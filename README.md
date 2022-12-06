@@ -38,9 +38,11 @@ Para elaborar nuestro prototipo primero revisamos diferentes paginas e ibamos sa
  Nuestro prototipo de Figma para la vista de PC.
 <img src="prototipo-de-figma.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
 <br>
+
  Nuestro prototipo de Figma para la vista de móvil.
-<img src="C:\Users\Ariel\OneDrive\Escritorio\DEV002-data-lovers\captura-de-prototipo -vista-de-móvil.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
+<img src="captura-de-prototipo-vista-de-móvil.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
 <br>
+
 Vista de nuestra página terminada.
 <img src="captura-página-terminada.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
 
