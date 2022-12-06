@@ -35,7 +35,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -72,7 +72,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -103,7 +103,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -135,7 +135,7 @@ selectCharacters.addEventListener('change', () => {
 
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -165,7 +165,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -195,7 +195,7 @@ selectCharacters.addEventListener('change', () => {
       createElement.setAttribute("class", 'contenedorCard');
       const templateTest = `
       <div id="template">
-        ${element.image !== "" ? `<img class='imagen' src=${element.image}>` : `<img class='imagen' src='imag/incógnito.jpg'>`}
+      <img  class="imagen" src="imag/incognito.jpg">
          <div class="caja">
          <h4 class="data"> ${element.name}</h4>
          <p class="data">Ancestry: ${element.species}</p>
@@ -224,13 +224,12 @@ document.getElementById("btnCharac").addEventListener("click", () => {
 
   const characters = data.characters;
   characters.forEach(element => {
-    let img = element.image !== "" ? element.image : "imag/incognito.jpg";
     const createElement = document.createElement("div")
     createElement.setAttribute("class", 'contenedorCard');
     const templateTest = `
     <div id="template">
 
-      <img  class="imagen" src="${img}">
+      <img  class="imagen" src="imag/incognito.jpg">
        <div class="caja">
        <h4 class="data"> ${element.name}</h4>
         <p class="data">Ancestry: ${element.species}</p>
@@ -691,6 +690,10 @@ document.addEventListener('keyup', e => {
           <img  class="imagen" src="imag/incógnito.jpg">
            <div class="caja">
            <h4 class="data"> ${element.name}</h4>
+        <p class="data">Ancestry: ${element.species}</p>
+       <p class="data">Gender: ${element.gender}</p>
+        <p class="data">Alive: ${element.alive}</p>
+        <p class="data">Specie: ${element.species}</p>
           </div>
        </div>
         `;
