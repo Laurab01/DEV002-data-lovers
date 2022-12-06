@@ -35,14 +35,12 @@ Son una comunidad con gustos de las peliculas y libros de Harry Potter los cuale
 
 Para elaborar nuestro prototipo primero revisamos diferentes paginas e ibamos sacando diferentes ideas de las pagina que ibamos viendo. Elaboramos nuestro prototipo en Figma y pedimos feedback de compañeras y solicitamos una OH.
 
- Nuestro prototipo de Figma para la vista de PC.
+° Nuestro prototipo de Figma para la vista de PC.
 <img src="prototipo-de-figma.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
-<br>
 
- Nuestro prototipo de Figma para la vista de móvil.
-<img src="captura-de-prototipo-vista-de-móvil.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
-<br>
+° Nuestro prototipo de Figma para la vista de móvil.
+<img src="captura-de-prototipo-vista-de-móvil.png" alt="Captura de panatalla de nuestro prototipo en vista móvil en Figma."/>
 
-Vista de nuestra página terminada.
-<img src="captura-página-terminada.png" alt="Captura de panatalla de nuestro prototipo en Figma."/>
+° Vista de nuestra página terminada.
+<img src="captura-página-terminada.png" alt="Captura de panatalla de nuestra página terminada."/>
 
