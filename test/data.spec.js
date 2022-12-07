@@ -25,7 +25,7 @@ const charactersData = [
     "ancestry": "",
     "gender": "male",
     "alive": "false",
-    "species": "human" 
+    "species": "human"
   },
   {
     "name": "Rubeus Hagrid",
@@ -43,7 +43,7 @@ describe('aToz ordena los personajes de la A a Z', () => {
     expect(aToZ).toBeTruthy();
   });
   it('Deberia devolver los personajes en asc',() =>{
-    let characAsc = aToZ(charactersData); 
+    let characAsc = aToZ(charactersData);
     expect(characAsc[0].name).toEqual('Cedric Diggory');
     expect(characAsc[1].name).toEqual('Harry Potter');
     expect(characAsc[2].name).toEqual('Hermione Granger');
@@ -111,7 +111,7 @@ describe('speciesHalfGiant muestra los personajes con especie half Giant', () =>
   it('Deberia mostrar los personajes con especie Half Giant', () => {
     let characHalf = speciesHalfGiant(charactersData);
     expect(characHalf[4].species).toEqual('half-giant');
-  
+
   });
 });
 //Data de los hechizo
@@ -161,7 +161,7 @@ describe('spellsCharm muestra los hechizos tipo Charm', () => {
     expect(spellCharm[1].spell_type).toEqual('Charm');
   });
 });
-//Data de los libros 
+//Data de los libros
 const booksData = [
   {
     "title":"Harry Potter and the Sorcerers Stone",
@@ -195,7 +195,7 @@ describe('alReves muestra los libros del mas viejo al mas reciente', () => {
     expect(bookOldest[2].releaseDay).toEqual('June 26, 1997');
   });
 });
-// Data Pociones 
+// Data Pociones
 const potionsData = [
   {
     "name": "Ageing Potion",
