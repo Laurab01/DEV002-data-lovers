@@ -56,13 +56,15 @@ body {
 
 h1 {
   font-family: 'Island Moments', cursive;
-  font-size: 700%;
-  left: 400px;
+  font-size: 80px;
   right: 60px;
   bottom: 20px;
-  top: 50px;
-  margin-top: 25px;
+  top: 20px;
+  margin-top: 0;
   position: relative;
+  left: 200px;
+  margin: 0;
+  text-align: center;
 }
 
 .select {
@@ -70,7 +72,7 @@ h1 {
   display: flex;
   align-self: center;
   left: 450px;
-  top: 100px;
+  top: 130px;
   right: 20px;
   font-weight: bold;
 
@@ -92,37 +94,41 @@ hr {
 #search {
   display: flex;
   position: relative;
-  right: 200px;
-  top: 220px;
-  width: 310%;
+  top: 320px;
+  width: 480px;
   height: 30px;
   border-radius: 40px;
   border: 3px solid rgba(102, 95, 95, 0.629);
   border-color: black;
   font-family: 'Montserrat', sans-serif;
+  right: 100px;
+  width: 480px;
 
 }
 
 #lupa {
   display: flex;
   position: relative;
-  left: 320px;
-  top: 190px;
+  top: 290px;
   width: 25px;
+  left:390px;
 
 }
 
 select {
-  height: 40px;
+  height: 35px;
   border-radius: 20px;
   width: auto;
 }
 
 .filterSelect {
   display: flex;
-
   flex-direction: row;
   justify-content: space-around;
+  position: relative;
+  right: 500px;
+  bottom: 20px;
+  margin: 0;
 
 }
 
@@ -306,12 +312,13 @@ h3 {
 }
 
 .data {
-  font-size: 15px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   flex-direction: row;
   margin-right: 20px;
   margin-left: 8px;
+  color: rgb(223, 222, 222);
 
 }
 
@@ -352,7 +359,7 @@ h3 {
   display: flex;
   position: relative;
   top: 100px;
-  left: 200px;
+  left: 100px;
   width: 16%;
   height: 1%;
   color: #fff;
@@ -362,7 +369,7 @@ h3 {
   cursor: pointer;
   line-height: 1%;
   text-align: center;
-  right: 50px;
+  right: 0px;
   margin-bottom: 25px;
   padding: 1.5% 4%;
   font-size: 30px;
@@ -378,6 +385,14 @@ h3 {
   flex-direction: row;
   margin-top: 50px;
 
+}
+.contaIndividual{
+  font-size: 25px;
+  display: flex;
+  position: relative;
+  left: 240px;
+  top: 78px;
+  color: white;
 }
 
 @media only screen and (min-width:320px) and (max-width:1280px) {
@@ -540,36 +555,7 @@ h3 {
     height: 2px;
   }
 }
-@media only screen and (min-width:1280px) and (max-width:1600px) {
-.filterSelect{
-  position: relative;
-  right: 500px;
-  bottom: 20px;
-  margin: 0;
-}
-#search{
-  right: 250px;
-  width: 480px;
-  bottom: 200px;
-}
-h1{
-  left: 200px;
-  display: flexbox;
-  flex-wrap: wrap;
-  margin: 0;
-  top: 25px;
-  font-size: 90px;
-}
-#barra{
-  height: 230px;
-}
-select{
-    height: 30px;
-}
-#lupa{
-  left: 240px;
-  width: 30px;
 
-}
 
-}
+
+
