@@ -30,6 +30,7 @@ selectCharacters.addEventListener('change', () => {
     const filtro = aToZ(data.characters)
 
 
+
     filtro.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -221,7 +222,7 @@ document.getElementById("btnCharac").addEventListener("click", () => {
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
   cardConteiner.style.display = 'block';
-
+  document.getElementById("contador").innerHTML = `<spam class="countBlue">You are viewing:</spam> ${data.characters.length} characters`;
   const characters = data.characters;
   characters.forEach(element => {
     const createElement = document.createElement("div")
@@ -449,7 +450,7 @@ document.getElementById("btnSpells").addEventListener("click", () => {
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
   cardConteiner.style.display = 'block';
-
+  document.getElementById("contador").innerHTML = `<spam class="countBlue">You are viewing:</spam> ${data.spells.length} spells`;
   const spells = data.spells;
   spells.forEach(element => {
 
@@ -550,7 +551,7 @@ document.getElementById("btnBooks").addEventListener("click", () => {
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
   cardConteiner.style.display = 'block';
-
+  document.getElementById("contador").innerHTML = `<spam class="countBlue">You are viewing:</spam> ${data.books.length} books`;
   const books = data.books;
   books.forEach(element => {
     const createElement = document.createElement("div")
@@ -642,7 +643,7 @@ document.getElementById("btnPotions").addEventListener("click", () => {
   accederAlDom.style.display = 'none';
   const cardConteiner = document.getElementById('cardConteiner');
   cardConteiner.style.display = 'block';
-
+  document.getElementById("contador").innerHTML = `<spam class="countBlue">You are viewing:</spam> ${data.potions.length} potions`;
   const potions = data.potions;
   potions.forEach(element => {
     const createElement = document.createElement("div")
