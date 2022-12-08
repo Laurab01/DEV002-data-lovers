@@ -613,7 +613,7 @@ selectPotions.addEventListener('change', () => {
     cardConteiner.style.display = 'block';
 
     const pociones = potionsDesc(data.potions)
-  
+
     pociones.forEach(element => {
       const createElement = document.createElement("div")
       createElement.setAttribute("class", 'contenedorCard');
@@ -704,3 +704,43 @@ document.addEventListener('keyup', e => {
     });
   }
 })
+
+const boton= document.getElementById('button')
+boton.addEventListener('click',() => {
+  const x = document.querySelector(".test")
+  x.innerHTML = ""
+  const accederAlDom = document.getElementById('home')
+  accederAlDom.style.display = 'block';
+
+  const cardConteiner = document.getElementById('cardConteiner');
+  cardConteiner.style.display = 'none';
+  document.getElementById('contador').style.display = 'none';
+
+})
+
+const mostrarMale = (data.characters).filter(e => e.gender == "male")
+console.log(mostrarMale.length)
+
+const mostrarFemale = (data.characters).filter(e => e.gender =="female")
+console.log(mostrarFemale.length)
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Male', 269],
+  ['Female', 134],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Data about the characters', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
