@@ -4,14 +4,14 @@
 }
 
 body {
-  background-image: linear-gradient(125deg, #3d2a52, #764082, #a85d84, #8d4887, #58B19F);
-  animation: bganimation 15s;
-  background-size: 400%;
-  margin: 0;
-  margin-right: 0;
-  margin-left: 0;
+  background-image: linear-gradient(130deg, #3d2a52, #764082, #a85d84, #8d4887, #58B19F);
+  
+  background-size: 100%;
   margin-bottom: 30px;
   background-repeat: repeat-y;
+  width: 100%;
+  height: 100%;
+
 }
 
 @keyframes bganimation {
@@ -39,7 +39,9 @@ body {
   background-color: rgba(11, 11, 12, 0.555);
   margin-bottom: 0;
   width: 100%;
-  /* min-width: 360px; */
+  min-width: 320px;
+  height: auto;
+
 }
 
 #logo {
@@ -48,8 +50,8 @@ body {
   left: 45%;
   margin-top: 25px;
   margin-left: 20px;
-  width: auto;
-
+  width: 170px;
+  height: 150px;
 }
 
 h1 {
@@ -70,7 +72,7 @@ h1 {
   display: flex;
   align-self: center;
   left: 450px;
-  top: 130px;
+  top: 90px;
   right: 20px;
   font-weight: bold;
 
@@ -92,7 +94,7 @@ hr {
 #search {
   display: flex;
   position: relative;
-  top: 320px;
+  top: 220px;
   width: 480px;
   height: 30px;
   border-radius: 40px;
@@ -107,14 +109,14 @@ hr {
 #lupa {
   display: flex;
   position: relative;
-  top: 290px;
+  top: 190px;
   width: 25px;
-  left: 390px;
+  left:390px;
 
 }
 
 select {
-  height: 35px;
+  height: 30px;
   border-radius: 20px;
   width: auto;
 }
@@ -384,28 +386,30 @@ h3 {
   margin-top: 50px;
 
 }
-
-.contaIndividual {
+.contaIndividual{
   font-size: 25px;
   display: flex;
   position: relative;
   left: 240px;
   top: 78px;
   color: white;
-
+}
+.pieChart{
+  display: flex;
+  position: relative;
+  left: 500px;
+  margin: 0;
+  size: 400px;
+  top: 50px;
+  width: 400px;
+  height: 300px;
+  font-size: 120px;
 }
 
-button{
-  height: 70px;
-  width: 150px;
-  color: #fff;
-  background-color: #641e72;
-  cursor: pointer ;
-}
+
 
 @media only screen and (min-width:320px) and (max-width:1280px) {
   body {
-
     margin-bottom: 5px;
     background-size: 100%;
   }
@@ -563,16 +567,11 @@ button{
   hr {
     height: 2px;
   }
+
+  .pieChart{
+
+    left:60px;
+    width: 200px;
+    height: 170px;
+  }
 }
-
-/* @media only screen and (min-width:360px) and (max-width:1366px) {
-
-
-} */
-
-#piechart{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-

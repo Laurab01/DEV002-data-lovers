@@ -705,19 +705,6 @@ document.addEventListener('keyup', e => {
   }
 })
 
-const boton= document.getElementById('button')
-boton.addEventListener('click',() => {
-  const x = document.querySelector(".test")
-  x.innerHTML = ""
-  const accederAlDom = document.getElementById('home')
-  accederAlDom.style.display = 'block';
-
-  const cardConteiner = document.getElementById('cardConteiner');
-  cardConteiner.style.display = 'none';
-  document.getElementById('contador').style.display = 'none';
-
-})
-
 const mostrarMale = (data.characters).filter(e => e.gender == "male")
 console.log(mostrarMale.length)
 
@@ -737,7 +724,7 @@ function drawChart() {
 ]);
 
   // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Data about the characters', 'width':550, 'height':400};
+  var options = {'title':'Data about the characters',};
 
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
